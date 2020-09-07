@@ -18,7 +18,7 @@ elif choose == str('2'):
     os.system("ReopenStudentMain.bat")
 elif choose == str('3'):
     print('您的选择为 定时关机！')
-    sleeptime = str(input('请输入您想要定时关机的秒数：'))
+    sleeptime = int(input('请输入您想要定时关机的秒数：'))
     print('正在倒计时...')
     if sleeptime > 0:
         sleetime = sleeptime -1
