@@ -22,7 +22,7 @@ elif choose == str('3'):
     print('正在倒计时...')
     if sleeptime > 0:
         sleetime = sleeptime -1
-        print('还有'+sleeptime+'秒关机！')
+        print('还有'+str(sleeptime)+'秒关机！')
         time.sleep(1)
     elif sleeptime <= 0:
         timeshut()
