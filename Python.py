@@ -20,12 +20,12 @@ elif choose == str('3'):
     print('您的选择为 定时关机！')
     sleeptime = int(input('请输入您想要定时关机的秒数：'))
     print('正在倒计时...')
-    if sleeptime > 0:
+    while sleeptime > 0:
         sleetime = sleeptime -1
         print('还有'+str(sleeptime)+'秒关机！')
         time.sleep(1)
-    elif sleeptime <= 0:
-        timeshut()
+    print('最后十秒钟！')
+    timeshut()
 elif choose == str('4'):
     print('怎么可能当场嘛~ 给你延长十秒钟嘛')
     os
