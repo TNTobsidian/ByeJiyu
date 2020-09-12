@@ -28,4 +28,4 @@ elif choose == str('3'):
     timeshut()
 elif choose == str('4'):
     print('怎么可能当场嘛~ 给你延长十秒钟嘛')
-    os
+    timeshut()
