@@ -5,7 +5,7 @@ def timeshut():
     os.system('shutdown -s -t 10')
     time.sleep(9)
     print('Bye~!')
-choose = str(input('请选择执行内容。\n1为清理极域电子教室\n2为打开极域电子教室\n3为定时关机\n4为当场关机\n5为删掉极域电子教室\n谨慎操作！\n您的选择是：'))
+choose = str(input('请选择执行内容。\n1为清理极域电子教室\n2为打开极域电子教室\n3为定时关机\n4为当场关机\n5为定时极域电子教室\n谨慎操作！\n您的选择是：'))
 print('正在判断选项')
 if choose == str('1'):
     print('您的选择为 结束极域电子教室')
@@ -29,3 +29,6 @@ elif choose == str('3'):
 elif choose == str('4'):
     print('怎么可能当场嘛~ 给你延长十秒钟嘛')
     timeshut()
+elif choose == str('5'):
+    print('进入Timer向导')
+    os.system("timer.py")
